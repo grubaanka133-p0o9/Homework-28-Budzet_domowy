@@ -1,0 +1,7 @@
+CREATE SCHEMA budżet_domowy;
+CREATE TABLE transaction (
+id INT auto_increment PRIMARY KEY,
+type ENUM ('Wydatek', 'Przychód'),
+description VARCHAR (200),
+amount DECIMAL (15,2),
+date DATE);
